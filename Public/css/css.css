@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    width: 100%;
+    background: repeating-linear-gradient(yellow, tomato 5px);  
+}
+
+header{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    background-color: azure;
+    border-bottom: 2px solid black;
+}
+
+nav div{
+    background-color: yellow;
+    width: 10%;
+    text-align: center;
+}
+
+.titulo{
+    background-color: azure;
+    width: 40%;
+    font-size: 2rem;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 40%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/head.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title{
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 20%;
+    width: 50%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    width: 100%;
+}
+section{
+    flex: 0 0.5 400px;
+    margin: auto;
+    height: 90vh;
+    background-color: azure;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: scroll;
+}
+.imagen{
+    width: 100%;
+    height: 20vh;
+    background-color: blue;
+}
+.logo{
+    width: 210px;
+    height: 100%;
+    background-image: url(../img/logo.png);
+    background-size: 100% 100%;
+    background-color: azure;
+}
+.contenedor-recetas{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-recetas * h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 10px;
+}
+.comentarios p{
+    text-align: left;
+}
+.receta>p{
+    margin-top: 10px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.comentar{
+    display: flex;
+    flex-direction: column;
+}
+.comentar>div{
+    width: 100%;
+    display: flex;
+}
+.comentar>div>div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.comentar>div>input, .comentar>div>button{
+    width: 50%;
+}
+footer{
+    width: 100%;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.tittle{
+    margin-top: 5%;
+}
+.mandar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+textarea{
+    width: 100%;
+    height: 20vh;
+}
+.imagen>img{
+    width: 100%;
+    height: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form p, form small{
+    color: black;
+}
+h2{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+section>form {
+    width: 50%;
+    margin: auto;
+}
+form input{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.gestion-usuarios{
+    flex: 0 1 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.gestion-recetas{
+    flex: 0 1 1000px;
+    display: flex;
+    flex-direction: column;
+}
+.alta{
+    width: 40%;
+    margin: auto;
+}
+
+.recetas{
+    margin: auto;
+    text-align: center;
+}
+.gestion-mensajes{
+    flex: 0 1 1000px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.gestion-mensajes>div{
+    width: 100%;
+    margin-top: 5%;
+}
+.paginas{
+    display: flex;
+    flex-direction: row;
+}
